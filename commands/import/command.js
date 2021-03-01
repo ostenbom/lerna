@@ -26,6 +26,11 @@ exports.builder = (yargs) =>
         describe: "Preserve original committer in addition to original author",
         type: "boolean",
       },
+      "commit-from": {
+        group: "Command Options:",
+        describe: "Non-inclusive commit to start import from in order to update an import",
+        type: "string",
+      },
       y: {
         group: "Command Options:",
         describe: "Skip all confirmation prompts",

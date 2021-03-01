@@ -23,6 +23,9 @@ class ImportCommand extends Command {
     if (this.options.flatten) {
       params.push("--first-parent");
     }
+    if (this.options.commitFrom) {
+      params.push(`${this.options.commitFrom}..HEAD`);
+    }
     return params;
   }
 
